@@ -1,0 +1,40 @@
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body style */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(135deg, #1d2b64, #f8cdda); /* Gradient background */
+    color: #fff;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Gallery title style */
+  h2 {
+    color: gold; /* Title color */
+    margin-bottom: 20px; /* Add some space below title */
+  }
+  
+  /* Image style */
+  img {
+    margin: 5px; /* Add some space around images */
+    border-radius: 10px; /* Rounded corners for images */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow effect to images */
+  }
+  
+  /* Back link style */
+  a {
+    text-decoration: none;
+    color: gold;
+    font-weight: bold; /* Make the text bold */
+  }
+  
+  /* Back link hover style */
+  a:hover {
+    color: #fff; /* Change link color on hover */
+  }
+  

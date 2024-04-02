@@ -1,0 +1,55 @@
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body style */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('gallery 4.jpg');
+    background-size: cover;
+    color: #fff;
+  }
+  
+  /* Header style */
+  header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    perspective: 1000px; /* Set perspective for 3D effect */
+  }
+  
+  /* Title style */
+  h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 36px;
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Add letter spacing */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+    transform: rotateY(20deg); /* Rotate title for 3D effect */
+  }
+  
+  /* Navigation style */
+  nav {
+    display: flex;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 20px;
+    transition: color 0.3s ease; /* Smooth transition for link color change */
+    transform-style: preserve-3d; /* Preserve 3D transformations */
+    transform: rotateY(-20deg); /* Rotate links for 3D effect */
+  }
+  
+  /* Navigation link hover style */
+  nav a:hover {
+    color: gold; /* Change link color on hover */
+    transform: rotateY(0); /* Reset rotation on hover */
+  }
+  
