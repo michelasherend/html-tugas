@@ -35,11 +35,7 @@ body, h1, h2, h3, p, ul, li {
   }
   
   /* Link style */
-  a {
-    color: gold; /* Link color */
-    text-decoration: none;
-    transition: color 0.3s ease; /* Smooth transition for link color change */
-  }.back-button {
+  .back-button {
     color: rgb(255, 253, 249);
     padding: 10px 20px;
     border-radius: 5px;
@@ -50,6 +46,7 @@ body, h1, h2, h3, p, ul, li {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+  }
   
   /* Link hover style */
   a:hover {
@@ -68,5 +65,4 @@ a {
   a:hover {
     color: #fff; /* Change link color on hover */
   }
-  
   
