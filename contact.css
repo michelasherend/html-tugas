@@ -18,7 +18,14 @@ body, h1, h2, h3, p, ul, li {
     color: gold; /* Title color */
     text-align: center; /* Center align title */
     margin-bottom: 20px; /* Add some space below title */
-  }
+  ul {
+    padding: 10px;
+    list-style-type: none;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
   
   /* List style */
   ul {
