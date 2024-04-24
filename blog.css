@@ -1,79 +1,78 @@
-/* Reset default browser styles */
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Body style */
-  body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
-    line-height: 1.9;
-  }
-  
-  /* Header style */
-  header {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    padding: 40px;
-    text-align: center;
-  }
-  
-  /* Main container */
-  .container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 20px;
-  }
-  
-  /* Blog content style */
-  main {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #eee;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  /* Article style */
-  article {
-    margin-bottom: 30px;
-  }
-  
-  article h2 {
-    color: #cea243;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  article p {
-    color: #eee;
-    line-height: 1.5;
-  }
-  
-  /* Footer style */
-  footer {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-  }
-  /* Link style */
-  .back-button {
-    color: rgb(255, 253, 249);
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    margin-top: auto;
-    display: inline-block;
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  /* Link hover style */
-  a:hover {
-    background-color: rgba(230, 227, 227, 0.2);
-  }
-  
+body {
+  background-image: url('gallery 6.jpg');
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 35px;
+  color: rgb(255, 253, 249);
+  text-align: center;
+  margin-top: 20px;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+article {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  color: rgb(255, 253, 249);
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  width: 100%;
+  text-align: center;
+  color: rgb(255, 253, 249);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 253, 249);
+  font-size: 18px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin-top: 30px;
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  transition: background-color 0.3s ease;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.small-image {
+  width: 65px;
+  height: auto;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.fade-in.active {
+  opacity: 1;
+}

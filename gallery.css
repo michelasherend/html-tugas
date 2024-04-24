@@ -1,40 +1,128 @@
 /* Reset default browser styles */
 body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Body style */
-  body {
-    font-family: 'Roboto', sans-serif;
-    background-image: linear-gradient(135deg, #1d2b64, #f8cdda); /* Gradient background */
-    color: #fff;
-    line-height: 1.6;
-    padding: 20px;
-  }
-  
-  /* Gallery title style */
-  h2 {
-    color: gold; /* Title color */
-    margin-bottom: 20px; /* Add some space below title */
-  }
-  
-  /* Image style */
-  img {
-    margin: 5px; /* Add some space around images */
-    border-radius: 10px; /* Rounded corners for images */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow effect to images */
-  }
-  
-  /* Back link style */
-  a {
-    text-decoration: none;
-    color: gold;
-    font-weight: bold; /* Make the text bold */
-  }
-  
-  /* Back link hover style */
-  a:hover {
-    color: #fff; /* Change link color on hover */
-  }
-  
+  margin: 0;
+  padding: 0;
+}
+
+/* Body style */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url(gallery\ 6.jpg); /* Gradient background */
+  color: #fff;
+  line-height: 1.6;
+  padding: 20px;
+  text-align: center; /* Tambahkan ini untuk memusatkan semua konten secara default */
+  position: relative; /* Tambahkan posisi relatif untuk konten absolute */
+}
+
+/* Gallery title style */
+h2 {
+  color: gold; /* Title color */
+  margin-bottom: 20px; /* Add some space below title */
+  text-align: center; /* Memastikan judul selalu terpusat */
+}
+
+
+img {
+  margin: 5px; 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+  display: inline-block; 
+  cursor: pointer; 
+  transition: transform 0.3s ease; 
+}
+
+
+img:hover {
+  transform: scale(1.1); 
+}
+
+/* Link style */
+.back-button {
+  color: rgb(255, 253, 249);
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+a {
+  text-decoration: none;
+}
+
+
+a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#pemilih-tema button {
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: 2px solid gold;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#pemilih-tema button:hover {
+  background-color: gold;
+  color: #1d2b64;
+}
+
+.tema {
+  margin: 20px 0;
+  display: flex; 
+  flex-wrap: wrap; 
+}
+
+
+.full-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 9999;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+
+#luxury {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+#luxury img {
+margin: 5px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#luxury h2 {
+color: gold;
+margin-bottom: 20px;
+text-align: center;
+width: 100%;
+}
